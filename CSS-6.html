@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    img {
+  border-radius: 50%;
+}
+    body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: lightblue;
+}
+
+.container {
+  background-color: lightgreen;
+  padding: 30px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px black;
+  width: 400px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid lightgray;
+  border-radius: 3px;
+  box-sizing: border-box;
+}
+
+.checkbox {
+  display: flex;
+  align-items: center;
+}
+
+.checkbox label {
+  margin-right: 10px;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  font-size: 12px;
+  display: block;
+  margin-top: 10px;
+}
+
+a:hover {
+  color: lightgray;
+}
+
+button {
+  display: inline-block;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  margin-right: 10px;
+  text-align: center;
+  font-size: 16px;
+}
+
+button:nth-child(2) {
+  background-color: white;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+  </style>  
+</head>
+<body>
+  <div class="container">
+    <form action="#">
+      <h1>Login</h1>
+      <center><img src="Charge-Cars.jpg" width="250" height="250"></center>
+      <div class="form-group">
+        <label for="username">Username</label>
+        <input type="text" id="username" name="username" placeholder="Enter Username">
+      </div>
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" placeholder="Enter Password">
+      </div>
+      <div class="form-group">
+        <div class="checkbox">
+          <label for="remember-me">
+            <input type="checkbox" id="remember-me" name="remember-me">
+            Remember me
+          </label>
+        </div>
+        <a href="CSS-5.html">Forgot password?</a>
+      </div>
+      <button type="submit">Login</button>
+      <button type="button">Cancel</button>
+    </form>
+  </div>
+</body>
+</html>
